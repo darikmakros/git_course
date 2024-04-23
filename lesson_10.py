@@ -10,4 +10,3 @@ def getHatCats(num_cats, num_rounds):
 
 hatted_cats = getHatCats(100, 100)
 print("Cats with hats:", hatted_cats)
-
