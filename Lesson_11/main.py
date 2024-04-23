@@ -1,4 +1,5 @@
-import Lesson_11.hello as hello
+
+import hello
 
 user = hello.hello()
-print(user)
+print("Hello", user)
