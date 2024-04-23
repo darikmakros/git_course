@@ -1,23 +1,15 @@
-import random
+def getHatCats(numCats, numRounds):
+    #INITIALIZE hats[numCats] to [False, False, ..., False] // массив длиной numCats
+    hats = [False] * numCats
+    #FOR roundNum in range(numRounds)
+    for roundNum in range(numRounds):
+        #FOR catNum in range(numCats)
+        for catNum in range(numCats):
+            #IF catNum is divisible by roundNum
+            if catNum % roundNum == 0:
+                #TOGGLE hats[catNum]
+                hats[catNum] = not hats[catNum]
+    #RETURN hats
+    return hats
 
-def capital_game():
-    capitals = {
-        'Ukraine': 'Kyiv', 'France': 'Paris', 'Germany': 'Berlin',
-        'Italy': 'Rome', 'USA': 'Washington', 'Canada': 'Ottawa',
-        'Switzerland': 'Bern', 'Austria': 'Vienna',
-        'Belgium': 'Brussels',  'Sweden': 'Stockholm',
-        'Norway': 'Oslo', 'Denmark': 'Copenhagen',
-        'Finland': 'Helsinki', 'Poland': 'Warsaw',
-        'Romania': 'Bucharest', 'Bulgaria': 'Sofia', 'Greece': 'Athens'
-    }
-    
-    def capital_game():
-    capitals = {
-        'Ukraine': 'Kyiv', 'France': 'Paris', 'Germany': 'Berlin',
-        'Italy': 'Rome', 'USA': 'Washington', 'Canada': 'Ottawa',
-        'Switzerland': 'Bern', 'Austria': 'Vienna',
-        'Belgium': 'Brussels',  'Sweden': 'Stockholm',
-        'Norway': 'Oslo', 'Denmark': 'Copenhagen',
-        'Finland': 'Helsinki', 'Poland': 'Warsaw',
-        'Romania': 'Bucharest', 'Bulgaria': 'Sofia', 'Greece': 'Athens'
-    }
+getHatCats(100, 100)
